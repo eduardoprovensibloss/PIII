@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="492.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unisep.view.ClientesController">
+   <children>
+      <Label layoutX="377.0" layoutY="14.0" text="Cadastro de Clientes" textFill="#3493c6" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="106.0" layoutY="68.0" text="Nome:" />
+      <TextField fx:id="txtNome" layoutX="155.0" layoutY="63.0" prefHeight="26.0" prefWidth="293.0" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="116.0" layoutY="101.0" text="CPF:" />
+      <TextField fx:id="txtCPF" layoutX="155.0" layoutY="96.0" prefHeight="26.0" prefWidth="140.0" />
+      <TextField fx:id="txtRG" layoutX="155.0" layoutY="129.0" prefHeight="26.0" prefWidth="140.0" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="120.0" layoutY="134.0" text="RG:" />
+      <TextField fx:id="txtEmail" layoutX="155.0" layoutY="162.0" prefHeight="26.0" prefWidth="209.0" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="105.0" layoutY="167.0" text="E-mail:" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="21.0" layoutY="199.0" text="Data de Nascimento:" />
+      <DatePicker fx:id="txtDataNascimento" layoutX="155.0" layoutY="194.0" />
+      <Button layoutX="155.0" layoutY="234.0" mnemonicParsing="false" onAction="#salvar" prefHeight="26.0" prefWidth="81.0" text="Salvar" />
+      <TableView fx:id="tabClientes" layoutX="16.0" layoutY="278.0" prefHeight="200.0" prefWidth="537.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="colNome" prefWidth="192.0" text="Nome" />
+          <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="182.0" text="E-mail" />
+            <TableColumn fx:id="colCPF" prefWidth="161.0" text="CPF" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
